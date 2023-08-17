@@ -577,23 +577,24 @@ margin-bottom: 16px;
   max-width: 264px;
 }
 .form-footer {
-  min-width: 264px;
-height: 40px;
-flex-shrink: 0; 
-background-color: transparent;
-border-radius: 4px;
-border: 1px solid var(--white, #FFF);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 264px;
+  height: 40px; 
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); 
+  border-radius: 4px;
+  color: #ffffff;
 }
 .form-footer::placeholder {
-color: var(--white, #FFF);
-font-size: 12px;
-font-weight: 400;
-line-height: 1.16;
-letter-spacing: 0.05em;
-padding: 8px 212px 8px 16px;
+  color: #ffffff;
 }
 .btn-footer {
+  min-width: 165px;
+  height: 40px;
   display: inline-flex;
 padding: 8px 24px;
 justify-content: center;
@@ -606,7 +607,12 @@ text-align: center;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
-letter-spacing: 0.06em;
+letter-spacing: 0.04em;
+cursor: pointer;
+border: none;
+}
+.icon-subs {
+  margin-left: 16px;
 }
 .background {
   position: fixed;
@@ -746,13 +752,14 @@ letter-spacing: 0.06em;
   justify-content: center;
   fill: transparent;
 }
-.icon-checkbox {
+.icon-checkbox:checked {
   background-color: var(--ocean, #404bbf);
   border: none; 
   fill: var(--cloud, #f4f4fd);
 }
 .link-checkbox {
   color: var(--iris, #4D5AE5);
+  text-decoration: underline;
 }
 .btn-send {
   display: block;
